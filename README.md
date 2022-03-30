@@ -8,7 +8,7 @@
 	Dosen Pengampu : Agung Nugroho, M.Kom
 </p>
 <p align="center"> 
-	<b>Tugas untuk memenuhi syarat penilain pada Pert-3</b>
+	<b>Tugas untuk memenuhi syarat penilain pada Pert-4</b>
 </p>
 
 <p align="center">
