@@ -54,7 +54,7 @@
 Software editor yang saya gunakan ialah Visual Studio Code
 
 <p align="center">
-	<img src="SS/vscode.png" alt="SS - doc_html">
+	<img src="SS/vscode.png" alt="vscode">
 </p>
 <p align="center">
 	Gambar Visual Studio Code (1.1)
@@ -64,7 +64,7 @@ Software editor yang saya gunakan ialah Visual Studio Code
 Selanjutnya buat folder dengan nama ``Lab3Web``
 
 <p align="center">
-	<img src="SS/buat_folder_lab3web.png" alt="SS - doc_html">
+	<img src="SS/buat_folder_lab3web.png" alt="create_folder_lab3_web">
 </p>
 <p align="center">
 	Gambar Buat Folder (2.1)
@@ -74,7 +74,7 @@ Selanjutnya buat folder dengan nama ``Lab3Web``
 Selanjutnya tampilkan folder yang baru dibuat sebelumnya untuk menampilkan pada kolom workspace Vs Code
 
 <p align="center">
-	<img src="SS/open_folder_lab3web.png" alt="SS - doc_html">
+	<img src="SS/open_folder_lab3web.png" alt="open_workshop_into_vscode">
 </p>
 <p align="center">
 	Gambar Alokasi Folder (3.1)
@@ -84,7 +84,7 @@ Selanjutnya tampilkan folder yang baru dibuat sebelumnya untuk menampilkan pada 
 Selanjutnya buat file dan beri nama ``lab3_list.html``
 
 <p align="center">
-	<img src="SS/new_file&rename_file.png" alt="SS - doc_html">
+	<img src="SS/new_file&rename_file.png" alt="create_new_file_inside_new_folder">
 </p>
 <p align="center">
 	Gambar Buat File Baru (4.1)
@@ -126,7 +126,7 @@ Selanjutnya tambahkan <i>Ordered list</i> dengan kode sebagai berikut
 Hasil Output atau setelah di jalankan
 
 <p align="center">
-	<img src="SS/output_ordered list.png" alt="SS - doc_html">
+	<img src="SS/output_ordered list.png" alt="output_ordered_list">
 </p>
 <p align="center">
 	Gambar Ordered List (5.1)
@@ -151,7 +151,7 @@ Selanjutnya tambahkan <i>Unordered List</i> setelah <i>Ordered list</i> dengan k
 Hasil Output atau setelah di jalankan
 
 <p align="center">
-	<img src="SS/output_Unordered List.png" alt="SS - doc_html">
+	<img src="SS/output_Unordered List.png" alt="output_unordered_lsit">
 </p>
 <p align="center">
 	Gambar Unordered List (5.2)
@@ -181,7 +181,7 @@ Selanjutnya tambahkan <i>Description List</i>, Setelah <i>Unordered List</i> den
 Hasil Output atau setelah di jalankan
 
 <p align="center">
-	<img src="SS/output_Description List.png" alt="SS - doc_html">
+	<img src="SS/output_Description List.png" alt="Output_Description_list">
 </p>
 <p align="center">
 	Gambar Description List (5.3)
@@ -193,7 +193,7 @@ Pada list di atas merupakan list menampilkan definisi atau <i>Description List</
 Buat dokumen html baru dengan nama ```lab3_tabel.html```
 
 <p align="center">
-	<img src="SS/file_baru_lab3_tabel.png" alt="SS - doc_html">
+	<img src="SS/file_baru_lab3_tabel.png" alt="new_file_lab3_table">
 </p>
 <p align="center">
 	Gambar File Tabel HTML (6.1)
@@ -251,7 +251,7 @@ Selanjutnya tambahkan kode sebagai berikut untuk membuat tabel sederhana
 Hasil Output atau setelah di jalankan
 
 <p align="center">
-	<img src="SS/output_table.png" alt="SS - doc_html">
+	<img src="SS/output_table.png" alt="output_tabel">
 </p>
 <p align="center">
 	Gambar Tabel HTML Sederhana (6.2)
@@ -276,7 +276,7 @@ Menyisipkan style margin dan padding pada elemen ``<table>..</table>`` untuk men
 Hasil Output atau setelah di jalankan
 
 <p align="center">
-	<img src="SS/output_table+Margin dan Padding.png" alt="SS - doc_html">
+	<img src="SS/output_table+Margin dan Padding.png" alt="output_table+margin&padding">
 </p>
 <p align="center">
 	Gambar Mengatur Garis Tepi Tabel HTML (6.3)
@@ -618,13 +618,98 @@ Kemudian input kode di bawah pada file tersebut atau bisa lanjutkan dengan file 
 Sama seperti sebelumnya isikan kembali kode di bawah ini sebelum tag elemen ``</fieldset>`` untuk membuat Listbox Mutiple Selection
 
 ```html
-
+                    <label>Pengguna Kartu Sim</label>
+                    <div class="multipleSelection">
+                        <div class="selectBox" 
+                            onclick="showCheckboxes()">
+                            <select>
+                                <option>--Kartu Sim--</option>
+                            </select>
+                            <div class="overSelect"></div>
+                        </div>
+                        <div id="checkBoxes">
+                            <label for="telkomsel">
+                                <input type="checkbox" id="telkomsel" />
+                                Telkomsel
+                            </label>
+                              
+                            <label for="xl">
+                                <input type="checkbox" id="xl" />
+                                XL
+                            </label>
+                            <label for="indosat">
+                                <input type="checkbox" id="indosat" />
+                                Indosat-Ooredo
+                            </label>
+                            <label for="smartfren">
+                                <input type="checkbox" id="smartfren" />
+                                Smartfren
+                            </label>
+                        </div>
+                    </div>
 ```
-Selanjutnya run / hasilkan output
+
+Kemudian tambahkan lagi style CSS Internal pada tag elemen ``<head>`` untuk merapikan tampilan Listbox secara vertikal
+
+```css
+<style>
+    .multipleSelection {
+        width: 300px;
+        background-color: #BCC2C1;
+    }
+    .selectBox {
+        position: relative;
+    }
+    .selectBox select {
+        width: 100%;
+        font-weight: bold;
+    }
+    .overSelect {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    #checkBoxes {
+        display: none;
+        border: 1px #8DF5E4 solid;
+    }
+    #checkBoxes label {
+        display: block;
+    }
+    #checkBoxes label:hover {
+        background-color: #4F615E;
+    }
+</style>
+```
+
+Dan terakhir tambahkan kode JavaScript sesudah kode ``</form>``  berfungsi untuk mendukung atribut checkbox
+
+```javascript
+    <script>
+        var show = true;
+        function showCheckboxes() {
+            var checkboxes = 
+                document.getElementById("checkBoxes");
+            if (show) {
+                checkboxes.style.display = "block";
+                show = false;
+            } else {
+                checkboxes.style.display = "none";
+                show = true;
+            }
+        }
+    </script> 
+```
+
+Dan selanjutnya run / hasilkan output
 
 <p align="center">
-	<img src="SS/" alt="Listbox Mutiple Selection">
+	<img src="SS/Output_listbox_multiple_selection.png" alt="output_Listbox Mutiple Selection">
 </p>
 <p align="center">
 	Gambar Listbox Mutiple Selection(9.4)
 </p>
+
+Sekian semoga ilmu tersebut bisa bermanfaat bagi teman - teman, selamat mengerjakan
