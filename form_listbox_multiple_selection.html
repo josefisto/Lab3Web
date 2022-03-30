@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Form Dropdown Menu</title>
+ <style>
+    .multipleSelection {
+        width: 300px;
+        background-color: #BCC2C1;
+    }
+    .selectBox {
+        position: relative;
+    }
+    .selectBox select {
+        width: 100%;
+        font-weight: bold;
+    }
+    .overSelect {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    #checkBoxes {
+        display: none;
+        border: 1px #8DF5E4 solid;
+    }
+    #checkBoxes label {
+        display: block;
+    }
+    #checkBoxes label:hover {
+        background-color: #4F615E;
+    }
+</style>
+</Head>  
+<Body>   
+    <header>
+        <h1>
+            Listbox Multiple Selection
+        </h1>
+    </header>
+    <form>  
+        <fieldset>
+            <legend>Data Pelanggan</legend>
+                <p>
+                    <label for="nama">Nama</label>
+                    <input type="text" id="nama" name="nama">
+                </p>
+                <p>
+                    <label for="alamat">Alamat</label>
+                    <textarea id="alamat" name="alamat" cols="20" rows="3"></textarea>
+                </p>
+                <p>
+                    <label>Jenis Kelamin</label>
+                    <input id="jk_l" type="radio" name="kelamin" value="L" />
+                        <label for="jk_l">Laki-laki</label>
+                    <input id="jk_p" type="radio" name="kelamin" value="P" />
+                        <label for="jk_p">Perempuan</label>
+                </p>
+                <p>
+                <label>Provinsi</label>  
+                    <select>
+                        <option align="center" value="" disabled selected hidden>--Pilih--</option>  
+                        <option value = "Jawa Barat">Jawa Barat</option>  
+                        <option value = "Jawa Timur">Jawa Timur</option>  
+                        <option value = "Kalimantan Timur">Kalimantan Timur</option>  
+                        <option value = "Bali">Bali</option>  
+                    </select>
+                </p>
+                <p> 
+                    <label>Pengguna Kartu Sim</label>
+                    <div class="multipleSelection">
+                        <div class="selectBox" 
+                            onclick="showCheckboxes()">
+                            <select>
+                                <option>--Kartu Sim--</option>
+                            </select>
+                            <div class="overSelect"></div>
+                        </div>
+                        <div id="checkBoxes">
+                            <label for="telkomsel">
+                                <input type="checkbox" id="telkomsel" />
+                                Telkomsel
+                            </label>
+                              
+                            <label for="xl">
+                                <input type="checkbox" id="xl" />
+                                XL
+                            </label>
+                            <label for="indosat">
+                                <input type="checkbox" id="indosat" />
+                                Indosat-Ooredo
+                            </label>
+                            <label for="smartfren">
+                                <input type="checkbox" id="smartfren" />
+                                Smartfren
+                            </label>
+                        </div>
+                    </div>
+                </p>
+                <p><input type="submit" value="Daftar"></p>
+            </fieldset>  
+    </form>
+    <script>
+        var show = true;
+  
+        function showCheckboxes() {
+            var checkboxes = 
+                document.getElementById("checkBoxes");
+  
+            if (show) {
+                checkboxes.style.display = "block";
+                show = false;
+            } else {
+                checkboxes.style.display = "none";
+                show = true;
+            }
+        }
+    </script>  
+</Body>   
+</Html>  

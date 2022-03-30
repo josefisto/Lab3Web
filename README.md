@@ -483,3 +483,148 @@ Pertanyaan dan Tugas
 
 ### Jawaban :
 
+#### Membuat Dropdown Menu
+Pertama buat file dokumen html baru dengan format ``lab3_form_dropdown_menu.html``
+
+<p align="center">
+	<img src="SS/file_baru_lab3_form_dropdown_menu.png" alt="Dropdown Menu">
+</p>
+<p align="center">
+	Gambar File Dropdown Menu (9.1)
+</p>
+
+Kemudian input kode di bawah pada file tersebut atau bisa ambil mentahan pada file dokumen html ``lab3_form.html``
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Form Dropdown Menu</title>
+</Head>  
+<Body>   
+    <header>
+        <h1>
+            Dropdown Menu Tabel Form
+        </h1>
+    </header>
+    <form>  
+        <fieldset>
+            <legend>Data Pelanggan</legend>
+                <p>
+                    <label for="nama">Nama</label>
+                    <input type="text" id="nama" name="nama">
+                </p>
+                <p>
+                    <label for="alamat">Alamat</label>
+                    <textarea id="alamat" name="alamat" cols="20" rows="3"></textarea>
+                </p>
+                <p>
+                    <label>Jenis Kelamin</label>
+                    <input id="jk_l" type="radio" name="kelamin" value="L" />
+                        <label for="jk_l">Laki-laki</label>
+                    <input id="jk_p" type="radio" name="kelamin" value="P" />
+                        <label for="jk_p">Perempuan</label>
+                </p>
+            </fieldset>  
+    </form>  
+</Body>
+</Html>
+```
+
+Selanjutnya teman - teman isikan lagi kode pada di bawah berikut ini untuk membuat Dropdown Menu dan letakkan kode tersebut sebelum ``</fieldset>``
+
+```html
+<label>Provinsi</label>  
+        <select>
+            <option align="center" value="" disabled selected hidden>--Pilih--</option>  
+            <option value = "Jawa Barat">Jawa Barat</option>  
+            <option value = "Jawa Timur">Jawa Timur</option>  
+            <option value = "Kalimantan Timur">Kalimantan Timur</option>  
+            <option value = "Bali">Bali</option>  
+        </select>
+```
+
+Selanjutnya run / hasilkan output
+
+<p align="center">
+	<img src="SS/output_dropdown_menu.png" alt="Output Dropdown Menu">
+</p>
+<p align="center">
+	Gambar Output Dropdown Menu (9.2)
+</p>
+
+### Membuat Listbox dengan Multiple Selection
+
+Buat file baru dokumen html dengan format ``form_listbox_multiple_selection.html``
+
+<p align="center">
+	<img src="SS/buat_file_form_listbox_multiple_selection.png" alt="Listbox Mutiple Selection">
+</p>
+<p align="center">
+	Gambar File Listbox Mutiple Selection(9.3)
+</p>
+
+Kemudian input kode di bawah pada file tersebut atau bisa lanjutkan dengan file dokumen html sebelumnya ``lab3_form_dropdown_menu.html``
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Form Dropdown Menu</title>
+</Head>  
+<Body>   
+    <header>
+        <h1>
+            Dropdown Menu Tabel Form
+        </h1>
+    </header>
+    <form>  
+        <fieldset>
+            <legend>Data Pelanggan</legend>
+                <p>
+                    <label for="nama">Nama</label>
+                    <input type="text" id="nama" name="nama">
+                </p>
+                <p>
+                    <label for="alamat">Alamat</label>
+                    <textarea id="alamat" name="alamat" cols="20" rows="3"></textarea>
+                </p>
+                <p>
+                    <label>Jenis Kelamin</label>
+                    <input id="jk_l" type="radio" name="kelamin" value="L" />
+                        <label for="jk_l">Laki-laki</label>
+                    <input id="jk_p" type="radio" name="kelamin" value="P" />
+                        <label for="jk_p">Perempuan</label>
+                </p>
+                <label>Provinsi</label>  
+                    <select>
+                        <option align="center" value="" disabled selected hidden>--Pilih--</option>  
+                        <option value = "Jawa Barat">Jawa Barat</option>  
+                        <option value = "Jawa Timur">Jawa Timur</option>  
+                        <option value = "Kalimantan Timur">Kalimantan Timur</option>  
+                        <option value = "Bali">Bali</option>  
+                    </select>
+                <p><input type="submit" value="Login"></p>
+            </fieldset>  
+    </form>  
+</Body>
+</Html>
+```
+
+Sama seperti sebelumnya isikan kembali kode di bawah ini sebelum tag elemen ``</fieldset>`` untuk membuat Listbox Mutiple Selection
+
+```html
+
+```
+Selanjutnya run / hasilkan output
+
+<p align="center">
+	<img src="SS/" alt="Listbox Mutiple Selection">
+</p>
+<p align="center">
+	Gambar Listbox Mutiple Selection(9.4)
+</p>
